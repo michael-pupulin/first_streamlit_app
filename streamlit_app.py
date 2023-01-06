@@ -1,11 +1,8 @@
 import streamlit
+import KaTex
 
 streamlit.title("My Parent's New Healthy Diner")
 
 streamlit.subheader("Breakfest")
-streamlit.latex(r'''
-                \begin{itemize}
-                \item \textbf{Three egg omlet} \textit{Add peppers, cheese tomato.} 7.99
-                \item \textbf{Bacon sandwhich} \textit{Add cheese, comes with fries.} 8.99
-                \end{itemize}
-                ''')
+streamlit.text("Three egg omlet 7.99")
+streamlit.text("Bacon sandwhich 8.99")
