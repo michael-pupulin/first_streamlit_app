@@ -12,7 +12,7 @@ my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.co
 
 streamlit.text("Some of our avaialble fresh fruits")
 
-selected = streamlit.multiselect("Go ahead and pick your favourites!:", list(my_fruit_list.Fruit))
+selected = streamlit.multiselect("Go ahead and pick your favourites!:", list(my_fruit_list.index))
 to_show = my_fruit_list.loc[selected]
 
 streamlit.dataframe(to_show)
