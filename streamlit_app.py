@@ -1,8 +1,8 @@
 import streamlit
-import KaTex
+
 
 streamlit.title("My Parent's New Healthy Diner")
 
-streamlit.subheader("Breakfest")
+streamlit.subheader("Breakfast")
 streamlit.text("Three egg omlet 7.99")
 streamlit.text("Bacon sandwhich 8.99")
