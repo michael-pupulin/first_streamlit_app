@@ -12,5 +12,5 @@ my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.co
 
 streamlit.text("Some of our avaialble fresh fruits")
 
-streamlit.multiselect("Go ahead and pick your favourites!:", list(my_fruit_list.index))
+streamlit.multiselect("Go ahead and pick your favourites!:", list(my_fruit_list.Fruit))
 streamlit.dataframe(my_fruit_list)
